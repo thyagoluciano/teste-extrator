@@ -1,4 +1,5 @@
 export default function handler(req, res) {
-    res.status(200).json(req)
+    console.log(req.headers);
+    res.status(200).json({headers:req.headers})
 }
   
